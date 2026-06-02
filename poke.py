@@ -35,7 +35,7 @@ while True:
     else:
         print("Forms:", poke_info["form_descriptions"][0]["description"])
 
-    # Find first English flavor text
+    #japanese fix
     description = "No description available."
     version = "Unknown"
 
