@@ -20,22 +20,42 @@ while True:
 
     poke_info = response.json()
     ability_info = response2.json()
+    types = [t["type"]["name"].title() for t in ability_info["types"]]
 
-    print("\nName:", pokemon)
-    print("ID:", poke_info["order"])
-    print("ID(per gen):", poke_info["pokedex_numbers"][0]["entry_number"])
-    print("Gen:", poke_info["generation"]["name"])
-    print("Height:", ability_info["height"])
-    print("Weight:", ability_info["weight"])
-    print("Ability:", ability_info["abilities"][0]["ability"]["name"])
-    print("Growth Rate:", poke_info["growth_rate"]["name"])
+    print("=" * 50)
+    print(f"{'Name':<15}: {pokemon.title()}")
+    print(f"{'National Dex':<15}: {poke_info['order']}")
+    print(f"{'Generation':<15}: {poke_info['generation']['name']}")
+    print(f"{'Height':<15}: {ability_info['height']}")
+    print(f"{'Weight':<15}: {ability_info['weight']}")
+    print(f"{'Type':<15}: {' / '.join(types)}")
+    print(f"{'Ability':<15}: {ability_info['abilities'][0]['ability']['name']}")
+    print(f"{'Growth Rate':<15}: {poke_info['growth_rate']['name']}")
+    print("\nStats")
+    print("-" * 50)
+
+    bst = 0
+
+    for stat in ability_info["stats"]:
+        name = stat["stat"]["name"].replace("-", " ").title()
+        value = stat["base_stat"]
+
+        bst += value
+
+        bar = "█" * (value // 10)
+
+        print(f"{name:<18} {bar:<15} {value}")
+
+    print("-" * 50)
+    print(f"{'BST':<18} {bst}")
+    print("=" * 50)
 
     if not poke_info["form_descriptions"]:
         print("Forms: NA")
     else:
         print("Forms:", poke_info["form_descriptions"][0]["description"])
 
-    #japanese fix
+    # japanese fix
     description = "No description available."
     version = "Unknown"
 
@@ -47,6 +67,8 @@ while True:
 
     print("About:", description)
     print("Version:", version)
+    print("=" * 50)
+    print("AUTHORED BY SIlver")
 
     sprite_url = ability_info["sprites"]["front_default"]
 
