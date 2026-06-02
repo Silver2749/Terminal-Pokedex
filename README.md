@@ -15,7 +15,7 @@ A terminal-based Pokédex built with Python that fetches Pokémon data from Pok�
 
 ### Metagross
 
-<img width="660" height="928" alt="Screenshot 2026-06-03 003844" src="https://github.com/user-attachments/assets/196f93ef-a9ac-4c8d-bda5-dc5301fa4862" />
+<img width="660" height="909" alt="Screenshot 2026-06-03 003844" src="https://github.com/user-attachments/assets/02a0031d-14a1-4b32-a391-555c9f66a23e" />
 
 ### Goodra
 
@@ -23,7 +23,7 @@ A terminal-based Pokédex built with Python that fetches Pokémon data from Pok�
 
 ### Palkia
 
-<img width="700" height="962" alt="Screenshot 2026-06-03 003102" src="https://github.com/user-attachments/assets/82d2fe8e-b1cd-4f13-9e51-1ea00ae9948f" />
+<img width="697" height="947" alt="Screenshot 2026-06-03 003102" src="https://github.com/user-attachments/assets/2431ed36-1a10-40be-b2ac-72c7880e6396" />
 
 ## Requirements
 
