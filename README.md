@@ -101,3 +101,7 @@ https://pokeapi.co
 - Pillow
 - ascii_magic
 
+## 👤 Author
+
+[Silver2749/Shane Braganza](https://github.com/Silver2749)
+
