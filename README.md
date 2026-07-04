@@ -33,7 +33,7 @@ A terminal-based Pokédex built with Python that fetches Pokémon data from Pok�
 ## Installation
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Silver2749/Terminal-Pokedex
 cd <repository-name>
 ```
 
